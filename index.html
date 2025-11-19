@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda martinez</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+<nav class="navbar">
+    <ul>
+
+        <!-- INICIO -->
+        <li><a href="#">
+            <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="black">
+                    <path d="M12 3L2 12h3v9h6v-6h2v6h6v-9h3L12 3z"/>
+                </svg>
+            </span>
+            <span class="text">Inicio</span>
+        </a></li>
+
+        <!-- PRODUCTOS -->
+        <li><a href="#productos">
+            <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="black">
+                    <path d="M16.5 3l2.5 2 3 1.5-2 4-3-1.5V21h-8V9L6 10.5 4 6.5 7 5l2.5-2h7z"/>
+                </svg>
+            </span>
+            <span class="text">Productos</span>
+        </a></li>
+
+        <!-- SOBRE NOSOTROS -->
+        <li><a href="#sobrenosotros">
+            <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="black">
+                    <path d="M12 2a10 10 0 110 20 10 10 0 010-20zm1 14h-2v-6h2v6zm0-8h-2V6h2v2z"/>
+                </svg>
+            </span>
+            <span class="text">Sobre Nosotros</span>
+        </a></li>
+
+        <!-- CONTACTO -->
+        <li><a href="#contacto">
+            <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="black">
+                    <path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.3 12 12 0 003.6.6 1 1 0 011 1v3.5a1 1 0 01-1 1C10.1 22 2 13.9 2 3a1 1 0 011-1h3.5a1 1 0 011 1 12 12 0 00.6 3.6 1 1 0 01-.3 1L6.6 10.8z"/>
+                </svg>
+            </span>
+            <span class="text">Contacto</span>
+        </a></li>
+    </ul>
+</nav>
+
+</header>
                 <section class="hero">
             <h1>Tienda <br> Martinez</h1>
             <p>Llevá tu pasion a todos lados.</p>
@@ -197,17 +235,37 @@
 
             </div>
         </section>
-        <hr>
-            <section class="Conjuntos-2025">
+            <section class="conjuntos-2025">
                 <h2>Conjuntos</h2>
-                    <div class="card">
-                        <img src="" alt="Boca Titular 2025">
+                <div class="conjuntos">
+                    <div class="card-conjuntos">
+                        <img src="./src/conjuntobrasil.jpeg" alt="Conjunto brasil 2025">
                         <h3>Boca Juniors</h3>
                         <p>Titular 2025</p>
                         <span class="precio">$35000</span>
-                        <button> <a href="https:wa.me//+5491157334501">Comprar </a></button>
+                        <button> <a href="https:wa.me//+5491157334501">Comprar</a></button>
                     </div>
+
+                    <div class="card-conjuntos">
+                        <img src="" alt="Argentina">
+                        <h3>Boca Juniors</h3>
+                        <p>Titular 2025</p>
+                        <span class="precio">$35000</span>
+                        <button> <a href="https:wa.me//+5491157334501">Comprar</a></button>
+                    </div>
+
+                    <div class="card-conjuntos">
+                        <img src="./src/conjuntoarg.jpeg" alt="Boca Titular 2025">
+                        <h3>Boca Juniors</h3>
+                        <p>Titular 2025</p>
+                        <span class="precio">$35000</span>
+                        <button> <a href="https:wa.me//+5491157334501">Comprar</a></button>
+                    </div>
+                </div>
             </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Tienda Martinez. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
