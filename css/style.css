@@ -268,6 +268,65 @@ footer{
     color: #f0f0f0;
 }
 
+/*contacto*/
+/* ===== Section de contacto ===== */
+
+#contacto {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#contacto h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+#contacto p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    color: #555;
+}
+
+/* Contenedor de redes */
+.redes-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Tarjeta de red */
+.item-red {
+    background: rgb(14, 14, 14);
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.item-red:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Link */
+.item-red a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Emoji o ícono */
+.item-red span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
