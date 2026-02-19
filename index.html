@@ -55,6 +55,14 @@
             <span class="text">Contacto</span>
         </a></li>
 
+        <!-- CARRITO -->
+        <li class="carrito-nav">
+            <button id="btn-carrito" aria-label="Abrir carrito">
+                <svg class="cart-svg" viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path class="line-cart" d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </li>
+
     </ul>
 </nav>
 
@@ -378,5 +386,27 @@
     <footer>
         <p>&copy; 2026 Tienda Martinez. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- CART OVERLAY -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- CART MODAL -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-header">
+            <h2>Tu Carrito</h2>
+            <button id="btn-cerrar-carrito" class="btn-cerrar-carrito" aria-label="Cerrar carrito">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0</span>
+            </div>
+            <button id="btn-checkout" class="btn-checkout">
+                Pasar a la compra
+            </button>
+        </div>
+    </div>
+
 </body>
 </html>
