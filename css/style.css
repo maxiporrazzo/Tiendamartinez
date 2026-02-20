@@ -423,4 +423,338 @@ footer{
     .navbar .text {
         display: none;               /* ocultar texto */
     }
+
+    .carrito-nav .text {
+        display: none;
+    }
+}
+
+/* ============================================================
+    CARRITO DE COMPRAS
+   ============================================================ */
+
+/* ── Cart button inside nav ────────────────────────────────── */
+
+.carrito-nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carrito-nav .text {
+    color: white;
+    transition: color 0.3s;
+}
+
+.carrito-nav button:hover .line-cart {
+    stroke: #ff4b2b;
+    transition: stroke 0.3s;
+}
+
+.carrito-nav button:hover .text {
+    color: #ff4b2b;
+}
+
+/* ── Badge counter ─────────────────────────────────────────── */
+.cart-count {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ff4b2b;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    animation: popIn 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes popIn {
+    0%   { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+/* ── Dark overlay ──────────────────────────────────────────── */
+.cart-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1099;
+    backdrop-filter: blur(4px);
+}
+
+.cart-overlay.active {
+    display: block;
+}
+
+/* ── Slide-in panel ────────────────────────────────────────── */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    max-width: 95vw;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.97);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.5);
+    padding: 25px 20px 20px;
+}
+
+.cart-modal.active {
+    right: 0;
+}
+
+.cart-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+}
+
+.cart-modal-header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.btn-cerrar-carrito {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.btn-cerrar-carrito:hover {
+    background: #ff4b2b;
+    transform: rotate(90deg);
+}
+
+/* Listado de productos */
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 4px;
+    padding-bottom: 10px;
+}
+
+.cart-items::-webkit-scrollbar       { width: 4px; }
+.cart-items::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 10px; }
+.cart-items::-webkit-scrollbar-thumb { background: #ff4b2b; border-radius: 10px; }
+
+/* Carrito vacio */
+.cart-empty {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-empty svg { opacity: 0.2; }
+
+/* Single item card */
+.cart-item {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideInCart 0.3s ease;
+}
+
+@keyframes slideInCart {
+    from { opacity: 0; transform: translateX(20px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+.cart-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cart-item-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-item-price {
+    font-size: 13px;
+    color: #32ff55;
+    font-weight: bold;
+}
+
+.cart-item-qty {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.qty-btn {
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    line-height: 1;
+}
+
+.qty-btn:hover { background: #ff4b2b; }
+
+.qty-number {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.cart-item-remove:hover { color: #ff4b2b; }
+
+/* ── Pie del carrito ───────────────────────────────────────────── */
+.cart-footer {
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+.cart-total > span:first-child {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+
+#cart-total {
+    color: #32ff55;
+    font-size: 26px;
+}
+
+/* ── WhatsApp - Proceder a la compra ─────────────────────── */
+.btn-checkout {
+    width: 100%;
+    background: linear-gradient(135deg, #2bb8ff, #002fcb);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 20px #284ca0;
+    animation: bounceCTA 2s ease-in-out infinite;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-checkout:hover {
+    animation: none;
+    transform: scale(1.03);
+    box-shadow: 0 6px 28px #16588e;
+}
+
+@keyframes bounceCTA {
+    0%, 100% { transform: translateY(0); }
+    45%      { transform: translateY(-7px); }
+    65%      { transform: translateY(-3px); }
+}
+
+/* ── Animacion del circulo al presionar "Agregar al carrito" ────── */
+.fly-dot {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background: #ff4b2b;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition:
+        left    1.01s cubic-bezier(0.4, 0, 0.2, 1),
+        top     1.01s cubic-bezier(0.4, 0, 0.2, 1),
+        width   1.01s ease,
+        height  1.01s ease,
+        opacity 1.01s ease;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 600px) {
+    .cart-modal {
+        width: 100vw;
+        right: -100vw;
+    }
 }
