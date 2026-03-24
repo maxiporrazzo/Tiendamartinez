@@ -8,6 +8,10 @@
     list-style: none;
     color: white;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -82,8 +86,8 @@ nav ul li a:hover{
     text-shadow: 0px 0px 8px rgba(0,0,0,0.7);
 }
 
-/* CAMISETAS RESPONSIVE */
-.camisetas-2025{
+/* PRODUCTOS RESPONSIVE */
+#productos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +95,7 @@ nav ul li a:hover{
     padding: 20px;
 }
 
-.camisetas-2025 h2{
+#productos h2{
     color: white;
     font-size: 40px;
     margin: 40px 0 20px 0;
@@ -348,7 +352,7 @@ footer{
         font-size: 20px;
     }
 
-    .camisetas-2025 h2,
+    #productos h2,
     .conjuntos-2025 h2{
         font-size: 30px;
     }
@@ -381,7 +385,7 @@ footer{
         font-size: 20px;
     }
 
-    .camisetas-2025 h2,
+    #productos h2,
     .conjuntos-2025 h2{
         font-size: 24px;
     }

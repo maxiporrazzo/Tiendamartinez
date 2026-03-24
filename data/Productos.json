@@ -1,0 +1,283 @@
+    {
+    "productos": [
+    {
+        "id": 1,
+        "categoria": "camisetas",
+        "nombre": "Boca Juniors - Titular 2025-26",
+        "equipo": "Boca Juniors",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/bocatitular.jpeg"
+    },
+    {
+        "id": 2,
+        "categoria": "camisetas",
+        "nombre": "Boca Juniors - Suplente Amarilla 2025-26",
+        "equipo": "Boca Juniors",
+        "descripcion": "Suplente Amarilla 2025-26",
+        "precio": 40000,
+        "imagen": "./src/bocaamarilla.jpeg"
+    },
+    {
+        "id": 3,
+        "categoria": "camisetas",
+        "nombre": "River Plate - Titular 2025-26",
+        "equipo": "River Plate",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/rivertitular2025.jpeg"
+    },
+    {
+        "id": 4,
+        "categoria": "camisetas",
+        "nombre": "River Plate - Suplente Negra y Roja 2025-26",
+        "equipo": "River Plate",
+        "descripcion": "Suplente Negra y Roja 2025-26",
+        "precio": 40000,
+        "imagen": "./src/riversuplente2025.jpeg"
+    },
+    {
+        "id": 5,
+        "categoria": "camisetas",
+        "nombre": "FC Barcelona - Negra 2025-26",
+        "equipo": "FC Barcelona",
+        "descripcion": "Negra 2025-26",
+        "precio": 40000,
+        "imagen": "./src/barcanegra.jpeg"
+    },
+    {
+        "id": 6,
+        "categoria": "camisetas",
+        "nombre": "FC Barcelona - Titular 2025-26",
+        "equipo": "FC Barcelona",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/barcatitular.jpeg"
+    },
+    {
+        "id": 7,
+        "categoria": "camisetas",
+        "nombre": "Corinthians - Blanca 2025-26",
+        "equipo": "Corinthians",
+        "descripcion": "Blanca 2025-26",
+        "precio": 40000,
+        "imagen": "./src/corinthians.jpeg"
+    },
+    {
+        "id": 8,
+        "categoria": "camisetas",
+        "nombre": "Corinthians - Negra 2025-26",
+        "equipo": "Corinthians",
+        "descripcion": "Negra 2025-26",
+        "precio": 40000,
+        "imagen": "./src/corinthiansblanca.jpeg"
+    },
+    {
+        "id": 9,
+        "categoria": "camisetas",
+        "nombre": "Chelsea - Titular 2025-26",
+        "equipo": "Chelsea",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/chelseatitular.jpeg"
+    },
+    {
+        "id": 10,
+        "categoria": "camisetas",
+        "nombre": "Real Madrid - Alternativa 2025-26",
+        "equipo": "Real Madrid",
+        "descripcion": "Alternativa 2025-26",
+        "precio": 40000,
+        "imagen": "./src/realmadridsuplente.jpeg"
+    },
+    {
+        "id": 11,
+        "categoria": "camisetas",
+        "nombre": "Real Madrid - Titular 2025-26",
+        "equipo": "Real Madrid",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/realmadridtitular.jpeg"
+    },
+    {
+        "id": 12,
+        "categoria": "camisetas",
+        "nombre": "Arsenal - Titular 2025-26",
+        "equipo": "Arsenal",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/arsenaltitular.jpeg"
+    },
+    {
+        "id": 13,
+        "categoria": "camisetas",
+        "nombre": "Manchester United - Titular 2025-26",
+        "equipo": "Manchester United",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/manunitedtitular.jpeg"
+    },
+    {
+        "id": 14,
+        "categoria": "camisetas",
+        "nombre": "Manchester United - Suplente Blanca y Violeta 2025-26",
+        "equipo": "Manchester United",
+        "descripcion": "Suplente Blanca y Violeta 2025-26",
+        "precio": 40000,
+        "imagen": "./src/manunitedblancayvioleta.jpeg"
+    },
+    {
+        "id": 15,
+        "categoria": "camisetas",
+        "nombre": "Manchester City - Entrenamiento 2025-26",
+        "equipo": "Manchester City",
+        "descripcion": "Entrenamiento 2025-26",
+        "precio": 40000,
+        "imagen": "./src/mancityentrenamiento.jpeg"
+    },
+    {
+        "id": 16,
+        "categoria": "camisetas",
+        "nombre": "PSG - Jordan 2025-26",
+        "equipo": "PSG",
+        "descripcion": "Jordan 2025-26",
+        "precio": 40000,
+        "imagen": "./src/psgjordan.jpeg"
+    },
+    {
+        "id": 17,
+        "categoria": "camisetas",
+        "nombre": "PSG - Titular Nike 2025-26",
+        "equipo": "PSG",
+        "descripcion": "Titular Nike 2025-26",
+        "precio": 40000,
+        "imagen": "./src/psgnike.jpeg"
+    },
+    {
+        "id": 18,
+        "categoria": "camisetas",
+        "nombre": "Inter de Milán - Suplente 2025-26",
+        "equipo": "Inter de Milán",
+        "descripcion": "Suplente 2025-26",
+        "precio": 40000,
+        "imagen": "./src/interblanca.jpeg"
+    },
+    {
+        "id": 19,
+        "categoria": "camisetas",
+        "nombre": "RD Bragantino - Titular 2025-26",
+        "equipo": "RD Bragantino",
+        "descripcion": "Titular 2025-26",
+        "precio": 40000,
+        "imagen": "./src/bragantino.jpeg"
+    },
+    {
+        "id": 20,
+        "categoria": "camisetas",
+        "nombre": "Brasil - Chomba 2025-26",
+        "equipo": "Brasil",
+        "descripcion": "Chomba 2025-26",
+        "precio": 40000,
+        "imagen": "./src/chombabrasil.jpeg"
+    },
+    {
+        "id": 21,
+        "categoria": "conjuntos",
+        "nombre": "Brasil - Musculosa y Short",
+        "equipo": "Brasil",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntobrasil.jpeg"
+    },
+    {
+        "id": 22,
+        "categoria": "conjuntos",
+        "nombre": "Inter - Musculosa y Short",
+        "equipo": "Inter",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjunto-inter.jpeg"
+    },
+    {
+        "id": 23,
+        "categoria": "conjuntos",
+        "nombre": "Argentina - Musculosa y Short",
+        "equipo": "Argentina",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntoarg.jpeg"
+    },
+    {
+        "id": 24,
+        "categoria": "conjuntos",
+        "nombre": "Barcelona - Musculosa y Short",
+        "equipo": "Barcelona",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntobarca.jpeg"
+    },
+    {
+        "id": 25,
+        "categoria": "conjuntos",
+        "nombre": "Liverpool - Musculosa y Short",
+        "equipo": "Liverpool",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/liverpool-conjunto.jpeg"
+    },
+    {
+        "id": 26,
+        "categoria": "conjuntos",
+        "nombre": "Milan - Musculosa y Short",
+        "equipo": "Milan",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntointer.jpeg"
+    },
+    {
+        "id": 27,
+        "categoria": "conjuntos",
+        "nombre": "Chelsea - Musculosa y Short",
+        "equipo": "Chelsea",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntochelsea.jpeg"
+    },
+    {
+        "id": 28,
+        "categoria": "conjuntos",
+        "nombre": "Roma - Musculosa y Short",
+        "equipo": "Roma",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntoroma.jpeg"
+    },
+    {
+        "id": 29,
+        "categoria": "conjuntos",
+        "nombre": "Manchester United - Musculosa y Short",
+        "equipo": "Manchester United",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntomanunited.jpeg"
+    },
+    {
+        "id": 30,
+        "categoria": "conjuntos",
+        "nombre": "Chelsea - Musculosa y Short",
+        "equipo": "Chelsea",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntoochelsea.jpeg"
+    },
+    {
+        "id": 31,
+        "categoria": "conjuntos",
+        "nombre": "Inter - Musculosa y Short",
+        "equipo": "Inter",
+        "descripcion": "Musculosa y Short",
+        "precio": 40000,
+        "imagen": "./src/conjuntointer2.jpeg"
+    }
+    ]
+}
